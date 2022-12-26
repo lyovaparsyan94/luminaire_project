@@ -1,0 +1,32 @@
+{% extends 'luminaire/base.html' %}
+
+{% block content %}
+<h1>{{post.title}}</h1>
+
+{% if post.photo %}
+<p><img class="img-article-left" src="{{post.photo.url}}"></p>
+{% endif %}
+    {%if "Мрамор" in post.title %}
+        <a href="https://www.list.am/ru/item/17726967">Больше фото...</a>
+    {% endif %}
+
+    {%if "Versache Gold" in post.title %}
+        <a href="https://www.list.am/ru/item/17726968">Больше фото...</a>
+    {% endif %}
+
+    {%if "Корона" in post.title %}
+        <a href="https://www.list.am/ru/item/17726909">Больше фото...</a>
+    {% endif %}
+
+    {%if "Слоновая Кость" in post.title %}
+        <a href="https://www.list.am/ru/item/18292890">Больше фото... </a>
+    {% endif %}
+
+    {%if "Прозрачное Золото Versace" in post.title %}
+        <a href="https://www.list.am/ru/item/17728348">Больше фото... </a>
+    {% endif %}
+
+
+{{ post.content|linebreaks }}
+
+{% endblock %}
